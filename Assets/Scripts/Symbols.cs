@@ -31,10 +31,6 @@ public class Symbols : MonoBehaviour
             {
                 Debug.Log(pages[page] + ": Error: " + webRequest.error);
             }
-            else
-            {
-                Debug.Log(pages[page] + ":\nReceived: " + webRequest.downloadHandler.text);
-            }
 
             var completeJson = webRequest.downloadHandler.text;
             Symbols_EntryData symbols = JsonUtility.FromJson<Symbols_EntryData>(completeJson);
