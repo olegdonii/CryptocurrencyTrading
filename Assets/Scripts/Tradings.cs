@@ -31,7 +31,7 @@ public class Tradings : MonoBehaviour
 
     private void Start()
     {
-        InvokeRepeating("GetTradings", 0f, 5f);
+        InvokeRepeating("GetTradings", 0f, 2f);
     }
 
     private void GetTradings()

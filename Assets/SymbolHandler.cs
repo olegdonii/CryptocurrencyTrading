@@ -7,14 +7,8 @@ using UnityEngine.UI;
 
 public class SymbolHandler : MonoBehaviour
 {
-    public Button yourButton;
     public Text aObject;
     [SerializeField] private GameObject windowManager;
-
-    void Start()
-    {
-        //windowManager = GameObject.Find("WindowManager");
-    }
 
     public void SetSymbol()
     {
@@ -22,7 +16,5 @@ public class SymbolHandler : MonoBehaviour
         windowManager = GameObject.FindGameObjectWithTag("Manager");
         Manager manager = (Manager) windowManager.GetComponent("Manager");
         manager.ChangeWindows();
-        //symbolPicker.SetActive(false);
-
     }
 }
